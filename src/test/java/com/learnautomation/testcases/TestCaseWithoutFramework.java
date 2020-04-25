@@ -12,9 +12,10 @@ public class TestCaseWithoutFramework {
 	@Test
 	public void test1() throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Chandani_50\\Desktop\\Selenium Jar\\chromedriver.exe");
 		
-		WebDriver driver = new ChromeDriver();
+	        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+		
+                WebDriver driver = new ChromeDriver();
 	
 		driver.get("http://freecrm.com/");
 		
